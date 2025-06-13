@@ -34,7 +34,8 @@ getComputerChoice();
 // INIT function named getHumanChoice
 // DECLARE parameter named humanChoice
 function getHumanChoice(humanChoice) {
-
+    humanChoice = prompt("Rock, paper, scissors, SHOOT!", "")
+    // INIT humanChoice by prompting for it
 }
 
-// INIT humanChoice by prompting for it
+getHumanChoice();
