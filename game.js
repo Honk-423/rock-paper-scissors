@@ -11,7 +11,6 @@ function getComputerChoice() {
             randomNumber = Math.random();
             console.log(randomNumber);
         }
-
     // WHILE randomNumber is less than 0.01 and more than 0.99
     // loop until another number is provided
 
@@ -31,6 +30,3 @@ function getComputerChoice() {
 }
 
 getComputerChoice();
-
-
-// RETURN computerChoice
