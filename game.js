@@ -30,3 +30,11 @@ function getComputerChoice() {
 }
 
 getComputerChoice();
+
+// INIT function named getHumanChoice
+// DECLARE parameter named humanChoice
+function getHumanChoice(humanChoice) {
+
+}
+
+// INIT humanChoice by prompting for it
