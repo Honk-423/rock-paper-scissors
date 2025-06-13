@@ -34,8 +34,11 @@ getComputerChoice();
 // INIT function named getHumanChoice
 // DECLARE parameter named humanChoice
 function getHumanChoice(humanChoice) {
-    humanChoice = prompt("Rock, paper, scissors, SHOOT!", "")
+    humanChoice = prompt("Rock, Paper, Scissors, SHOOT!", "")
     // INIT humanChoice by prompting for it
+
+    // MAKE humanChoice input all lowercase, then capitalize 
+    // the first letter.
 }
 
 getHumanChoice();
