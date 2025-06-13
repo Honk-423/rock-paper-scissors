@@ -7,23 +7,30 @@ function getComputerChoice() {
     console.log(`randomNumber is ${randomNumber}.`)
     // GENERATE a random number with Math.random
 
-    if (randomNumber >= 0.67) {
+    while (randomNumber < 0.01 || randomNumber > 0.99) {
+            randomNumber = Math.random();
+            console.log(randomNumber);
+        }
+        
+    // WHILE randomNumber is less than 0.01 and more than 0.99
+    // loop until another number is provided
+
+    if (randomNumber >= 0.67 && randomNumber < 0.999) {
         computerChoice = "Scissors";
+        // IF 0.67 or more make computerChoice "scissors"
     } else if (randomNumber <= 0.66 && randomNumber > 0.33) {
         computerChoice = "Paper";
+        // IF 0.34 or more make computerChoice "paper"
     } else if (randomNumber <= 0.33 && randomNumber > 0.01) {
         computerChoice = "Rock";
+        // IF 0.01 or more make computerChoice "rock"
     }
 
     console.log(`computerChoice is ${computerChoice}.`)
-        // IF 0.01 or more make computerChoice "rock"
-        // IF 0.34 or more make computerChoice "paper"
-        // IF 0.67 or more make computerChoice "scissors"
 
 }
 
 getComputerChoice();
 
 
-// ELSE loop until another number is provided
 // RETURN computerChoice
