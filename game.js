@@ -11,11 +11,11 @@ function getComputerChoice() {
             randomNumber = Math.random();
             console.log(randomNumber);
         }
-        
+
     // WHILE randomNumber is less than 0.01 and more than 0.99
     // loop until another number is provided
 
-    if (randomNumber >= 0.67 && randomNumber < 0.999) {
+    if (randomNumber >= 0.67 && randomNumber < 0.99) {
         computerChoice = "Scissors";
         // IF 0.67 or more make computerChoice "scissors"
     } else if (randomNumber <= 0.66 && randomNumber > 0.33) {
