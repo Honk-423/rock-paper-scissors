@@ -1,3 +1,6 @@
+// INIT computerScore global variable with a default value of 0
+// INIT humanScore global variable with a default value of 0
+
 // INIT a function called getComputerChoice
 function getComputerChoice() {
     let computerChoice;
@@ -45,3 +48,13 @@ function getHumanChoice(humanChoice) {
 }
 
 getHumanChoice();
+
+// INIT function called playRound
+// DECLARE parameters named computerChoice and humanChoice
+// MAKE parameter humanChoice case insensitve
+// LOG the a victory and defeat string to console.log
+// INCREMENT computerScore or humanScore depending on which one won
+
+// INIT function called playGame
+// MOVE playRound function inside of playGame
+// CALL playRound function five times to play five rounds
