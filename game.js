@@ -47,13 +47,30 @@ function getHumanChoice(humanChoice) {
 function playRound(computerChoice, humanChoice) {
     computerChoice = getComputerChoice();
     humanChoice = getHumanChoice();
+    // MAKE parameter humanChoice case insensitve
+
+    if (humanChoice == "Rock" && computerChoice == "Paper") {
+        console.log("You lose! Paper beats rock.")
+    } else if (humanChoice == "Paper" && computerChoice == "Scissors") {
+        console.log("You lose! Scissors beats paper.") 
+    } else if (humanChoice == "Scissors" && computerChoice == "Rock") {
+        console.log("You lose! Rock beats scissors.") 
+    } else if (humanChoice == "Paper" && computerChoice == "Rock") {
+        console.log("You win! Paper beats rock.")
+    } else if (humanChoice == "Rock" && computerChoice == "Scissors") {
+        console.log("You win! Rock beats scissors.")
+    } else if (humanChoice == "Scissors" && computerChoice == "Paper") {
+        console.log("You win! Scissors beats paper.")
+    } else {
+        console.log("It's a draw!")
+    } 
+    
     console.log(computerChoice);
     console.log(humanChoice);
     
-}
+} 
 
 playRound();
-// MAKE parameter humanChoice case insensitve
 // LOG the a victory and defeat string to console.log
 // INCREMENT computerScore or humanScore depending on which one won
 
