@@ -48,8 +48,11 @@ function playRound(computerChoice, humanChoice) {
     computerChoice = getComputerChoice();
     humanChoice = getHumanChoice();
 
-    humanChoice = humanChoice.toLowerCase();
-    humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1);
+    if (humanChoice > "") {
+        humanChoice = humanChoice.toLowerCase();
+        humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1);
+    }
+    
     // MAKE parameter humanChoice case insensitve
 
     if (humanChoice == "Rock" && computerChoice == "Paper") {
