@@ -5,8 +5,7 @@ let humanScore = 0;
 // INIT humanScore global variable with a default value of 0
 
 // INIT a function called getComputerChoice
-function getComputerChoice() {
-    let computerChoice;
+function getComputerChoice(computerChoice) {
     // INIT a variable called computerChoice
 
     randomNumber = Math.random()
@@ -31,26 +30,29 @@ function getComputerChoice() {
         // IF 0.01 or more make computerChoice "rock"
     }
 
-    console.log(`computerChoice is ${computerChoice}.`)
-
+    return computerChoice;
 }
-
-getComputerChoice();
 
 // INIT function named getHumanChoice
 // DECLARE parameter named humanChoice
 function getHumanChoice(humanChoice) {
     humanChoice = prompt("Rock, Paper, Scissors, SHOOT!", "")
     // INIT humanChoice by prompting for it
-}
 
-getHumanChoice();
+    return humanChoice;
+}
 
 // INIT function called playRound
 // DECLARE parameters named computerChoice and humanChoice
 function playRound(computerChoice, humanChoice) {
+    computerChoice = getComputerChoice();
+    humanChoice = getHumanChoice();
+    console.log(computerChoice);
+    console.log(humanChoice);
     
 }
+
+playRound();
 // MAKE parameter humanChoice case insensitve
 // LOG the a victory and defeat string to console.log
 // INCREMENT computerScore or humanScore depending on which one won
