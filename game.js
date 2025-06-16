@@ -48,6 +48,9 @@ getHumanChoice();
 
 // INIT function called playRound
 // DECLARE parameters named computerChoice and humanChoice
+function playRound(computerChoice, humanChoice) {
+    
+}
 // MAKE parameter humanChoice case insensitve
 // LOG the a victory and defeat string to console.log
 // INCREMENT computerScore or humanScore depending on which one won
