@@ -47,6 +47,9 @@ function getHumanChoice(humanChoice) {
 function playRound(computerChoice, humanChoice) {
     computerChoice = getComputerChoice();
     humanChoice = getHumanChoice();
+
+    humanChoice = humanChoice.toLowerCase();
+    humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1);
     // MAKE parameter humanChoice case insensitve
 
     if (humanChoice == "Rock" && computerChoice == "Paper") {
@@ -64,14 +67,14 @@ function playRound(computerChoice, humanChoice) {
     } else {
         console.log("It's a draw!")
     } 
-    
+    // LOG the a victory and defeat string to console.log
+
     console.log(computerChoice);
     console.log(humanChoice);
     
 } 
 
 playRound();
-// LOG the a victory and defeat string to console.log
 // INCREMENT computerScore or humanScore depending on which one won
 
 // INIT function called playGame
