@@ -39,12 +39,6 @@ getComputerChoice();
 function getHumanChoice(humanChoice) {
     humanChoice = prompt("Rock, Paper, Scissors, SHOOT!", "")
     // INIT humanChoice by prompting for it
-    humanChoice = humanChoice.toLowerCase();
-    humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1);
-    console.log(humanChoice);
-    // MAKE humanChoice input always convert string to lowercase, then
-    // capitalize the first letter. This makes it to where the input is
-    // always output in the same way.
 }
 
 getHumanChoice();
