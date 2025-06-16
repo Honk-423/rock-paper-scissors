@@ -1,4 +1,7 @@
+let computerScore = 0;
 // INIT computerScore global variable with a default value of 0
+
+let humanScore = 0;
 // INIT humanScore global variable with a default value of 0
 
 // INIT a function called getComputerChoice
