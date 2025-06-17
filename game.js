@@ -77,8 +77,12 @@ function playRound(computerChoice, humanChoice) {
     // LOG the a victory and defeat string to console.log
     // Make a console.log output for invalid input
 
-    console.log(computerChoice);
-    console.log(humanChoice);
+    if (humanChoice == "Rock" 
+        || humanChoice == "Paper" 
+        || humanChoice == "Scissors") {
+            console.log(computerChoice);
+            console.log(humanChoice);
+        }
     
 } 
 
