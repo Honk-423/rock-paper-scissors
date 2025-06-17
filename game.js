@@ -54,6 +54,13 @@ function playRound(computerChoice, humanChoice) {
     }
     // MAKE parameter humanChoice case insensitve
 
+    if (humanChoice == "Rock" 
+        || humanChoice == "Paper" 
+        || humanChoice == "Scissors") {
+            console.log(computerChoice);
+            console.log(humanChoice);
+        }
+
     if (humanChoice == "Rock" && computerChoice == "Paper") {
         console.log("You lose! Paper beats rock.");
         computerScore++;
@@ -88,13 +95,6 @@ function playRound(computerChoice, humanChoice) {
     } 
     // LOG the a victory and defeat string to console.log
     // Make a console.log output for invalid input
-
-    if (humanChoice == "Rock" 
-        || humanChoice == "Paper" 
-        || humanChoice == "Scissors") {
-            console.log(computerChoice);
-            console.log(humanChoice);
-        }
     
 } 
 
