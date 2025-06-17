@@ -9,7 +9,7 @@ function getComputerChoice(computerChoice) {
     // INIT a variable called computerChoice
 
     randomNumber = Math.random()
-    console.log(`randomNumber is ${randomNumber}.`)
+    console.log(`randomNumber is ${randomNumber}.`);
     // GENERATE a random number with Math.random
 
     while (randomNumber < 0.01 || randomNumber > 0.99) {
@@ -36,7 +36,7 @@ function getComputerChoice(computerChoice) {
 // INIT function named getHumanChoice
 // DECLARE parameter named humanChoice
 function getHumanChoice(humanChoice) {
-    humanChoice = prompt("Rock, Paper, Scissors, SHOOT!", "")
+    humanChoice = prompt("Rock, Paper, Scissors, SHOOT!", "");
     // INIT humanChoice by prompting for it
 
     return humanChoice;
@@ -56,23 +56,23 @@ function playRound(computerChoice, humanChoice) {
     // MAKE parameter humanChoice case insensitve
 
     if (humanChoice == "Rock" && computerChoice == "Paper") {
-        console.log("You lose! Paper beats rock.")
+        console.log("You lose! Paper beats rock.");
     } else if (humanChoice == "Paper" && computerChoice == "Scissors") {
-        console.log("You lose! Scissors beats paper.") 
+        console.log("You lose! Scissors beats paper.");
     } else if (humanChoice == "Scissors" && computerChoice == "Rock") {
-        console.log("You lose! Rock beats scissors.") 
+        console.log("You lose! Rock beats scissors."); 
     } else if (humanChoice == "Paper" && computerChoice == "Rock") {
-        console.log("You win! Paper beats rock.")
+        console.log("You win! Paper beats rock.");
     } else if (humanChoice == "Rock" && computerChoice == "Scissors") {
-        console.log("You win! Rock beats scissors.")
+        console.log("You win! Rock beats scissors.");
     } else if (humanChoice == "Scissors" && computerChoice == "Paper") {
-        console.log("You win! Scissors beats paper.")
+        console.log("You win! Scissors beats paper.");
     } else if (!(humanChoice == "Rock" 
         || humanChoice == "Paper" 
         || humanChoice == "Scissors")) {
-        console.log("Invalid input. Nothing happens.")
+        console.log("Invalid input. Nothing happens.");
     } else {
-        console.log("It's a draw!")
+        console.log("It's a draw!");
     } 
     // LOG the a victory and defeat string to console.log
     // Make a console.log output for invalid input
