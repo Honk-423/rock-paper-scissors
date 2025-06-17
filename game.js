@@ -9,7 +9,6 @@ function getComputerChoice(computerChoice) {
     // INIT a variable called computerChoice
 
     randomNumber = Math.random()
-    console.log(`randomNumber is ${randomNumber}.`);
     // GENERATE a random number with Math.random
 
     while (randomNumber < 0.01 || randomNumber > 0.99) {
@@ -57,41 +56,41 @@ function playRound(computerChoice, humanChoice) {
     if (humanChoice == "Rock" 
         || humanChoice == "Paper" 
         || humanChoice == "Scissors") {
-            console.log(computerChoice);
-            console.log(humanChoice);
+            console.log(`Computer: ${computerChoice}`);
+            console.log(`Human: ${humanChoice}`);
         }
 
     if (humanChoice == "Rock" && computerChoice == "Paper") {
         console.log("You lose! Paper beats rock.");
         computerScore++;
-        console.log(`Computer: ${computerScore} | Human: ${humanScore}`)
+        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
     } else if (humanChoice == "Paper" && computerChoice == "Scissors") {
         console.log("You lose! Scissors beats paper.");
         computerScore++;
-        console.log(`Computer: ${computerScore} | Human: ${humanScore}`)
+        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
     } else if (humanChoice == "Scissors" && computerChoice == "Rock") {
         console.log("You lose! Rock beats scissors."); 
         computerScore++;
-        console.log(`Computer: ${computerScore} | Human: ${humanScore}`)
+        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
     } else if (humanChoice == "Paper" && computerChoice == "Rock") {
         console.log("You win! Paper beats rock.");
         humanScore++;
-        console.log(`Computer: ${computerScore} | Human: ${humanScore}`)
+        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
     } else if (humanChoice == "Rock" && computerChoice == "Scissors") {
         console.log("You win! Rock beats scissors.");
         humanScore++;
-        console.log(`Computer: ${computerScore} | Human: ${humanScore}`)
+        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
     } else if (humanChoice == "Scissors" && computerChoice == "Paper") {
         console.log("You win! Scissors beats paper.");
         humanScore++;
-        console.log(`Computer: ${computerScore} | Human: ${humanScore}`)
+        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
     } else if (!(humanChoice == "Rock" 
         || humanChoice == "Paper" 
         || humanChoice == "Scissors")) {
         console.log("Invalid input. Nothing happens.");
     } else {
         console.log("It's a draw!");
-        console.log(`Computer: ${computerScore} | Human: ${humanScore}`)
+        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
     } 
     // LOG the a victory and defeat string to console.log
     // Make a console.log output for invalid input
