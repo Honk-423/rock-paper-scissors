@@ -71,6 +71,7 @@ function playRound(computerChoice, humanChoice) {
         console.log("It's a draw!")
     } 
     // LOG the a victory and defeat string to console.log
+    // Make a console.log output for invalid input
 
     console.log(computerChoice);
     console.log(humanChoice);
@@ -83,3 +84,6 @@ playRound();
 // INIT function called playGame
 // MOVE playRound function inside of playGame
 // CALL playRound function five times to play five rounds
+
+// Add a semicolon after almost every parentheses to mark the end of a
+// statememt.
