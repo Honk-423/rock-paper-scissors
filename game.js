@@ -67,6 +67,10 @@ function playRound(computerChoice, humanChoice) {
         console.log("You win! Rock beats scissors.")
     } else if (humanChoice == "Scissors" && computerChoice == "Paper") {
         console.log("You win! Scissors beats paper.")
+    } else if (!(humanChoice == "Rock" 
+        || humanChoice == "Paper" 
+        || humanChoice == "Scissors")) {
+        console.log("Invalid input. Nothing happens.")
     } else {
         console.log("It's a draw!")
     } 
