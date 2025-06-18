@@ -31,17 +31,18 @@ function getComputerChoice(computerChoice) {
     return computerChoice;
 }
 
+
 /* 
 *  Prompts the user for a choice between rock, paper, and scissors. 
 *  Assigns the input of that prompt as the user's choice, then returns
 *  the value so it can be used inside of other functions later.
 */
-
 function getHumanChoice(humanChoice) {
     humanChoice = prompt("Rock, Paper, Scissors, SHOOT!", "");
 
     return humanChoice;
 }
+
 
 /* 
 * Contains the playRound function and score variables because they are 
@@ -68,6 +69,7 @@ function playGame () {
     */
     function playRound(computerChoice, humanChoice) {
         computerChoice = getComputerChoice();
+
         humanChoice = getHumanChoice();
         
         if (humanChoice > "") {
@@ -90,7 +92,7 @@ function playGame () {
                 console.log(`Computer: ${computerChoice}`);
                 console.log(`Human: ${humanChoice}`);
             }
-            
+
             if (humanChoice == "Rock" && computerChoice == "Paper") {
                 console.log("You lose! Paper beats rock.");
                 computerScore++;
@@ -133,5 +135,6 @@ function playGame () {
     playRound();
 
 }
+
 
 playGame();
