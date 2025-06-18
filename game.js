@@ -41,68 +41,74 @@ function getHumanChoice(humanChoice) {
     return humanChoice;
 }
 
-// INIT function called playRound
-// DECLARE parameters named computerChoice and humanChoice
-function playRound(computerChoice, humanChoice) {
-    computerChoice = getComputerChoice();
-    humanChoice = getHumanChoice();
 
-    if (humanChoice > "") {
-        humanChoice = humanChoice.toLowerCase();
-        humanChoice = humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1);
-    }
-    // MAKE parameter humanChoice case insensitve
 
-    if (humanChoice == "Rock" 
-        || humanChoice == "Paper" 
-        || humanChoice == "Scissors") {
-            console.log(`Computer: ${computerChoice}`);
-            console.log(`Human: ${humanChoice}`);
-        }
-
-    if (humanChoice == "Rock" && computerChoice == "Paper") {
-        console.log("You lose! Paper beats rock.");
-        computerScore++;
-        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
-    } else if (humanChoice == "Paper" && computerChoice == "Scissors") {
-        console.log("You lose! Scissors beats paper.");
-        computerScore++;
-        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
-    } else if (humanChoice == "Scissors" && computerChoice == "Rock") {
-        console.log("You lose! Rock beats scissors."); 
-        computerScore++;
-        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
-    } else if (humanChoice == "Paper" && computerChoice == "Rock") {
-        console.log("You win! Paper beats rock.");
-        humanScore++;
-        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
-    } else if (humanChoice == "Rock" && computerChoice == "Scissors") {
-        console.log("You win! Rock beats scissors.");
-        humanScore++;
-        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
-    } else if (humanChoice == "Scissors" && computerChoice == "Paper") {
-        console.log("You win! Scissors beats paper.");
-        humanScore++;
-        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
-    } else if (!(humanChoice == "Rock" 
-        || humanChoice == "Paper" 
-        || humanChoice == "Scissors")) {
-        console.log("Invalid input. Nothing happens.");
-    } else {
-        console.log("It's a draw!");
-        console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
-    } 
-    // LOG the a victory and defeat string to console.log
-    // Make a console.log output for invalid input
-    // INCREMENT computerScore or humanScore depending on which one won
-    
-} 
-
-playRound();
 
 // INIT function called playGame
 function playGame () {
     
+    // INIT function called playRound
+    // DECLARE parameters named computerChoice and humanChoice
+    function playRound(computerChoice, humanChoice) {
+        computerChoice = getComputerChoice();
+        humanChoice = getHumanChoice();
+        
+        if (humanChoice > "") {
+            humanChoice = humanChoice.toLowerCase();
+            humanChoice = humanChoice.charAt(0).toUpperCase() + 
+            humanChoice.slice(1);
+        }
+        // MAKE parameter humanChoice case insensitve
+        
+        if (humanChoice == "Rock" 
+            || humanChoice == "Paper" 
+            || humanChoice == "Scissors") {
+                console.log(`Computer: ${computerChoice}`);
+                console.log(`Human: ${humanChoice}`);
+            }
+            
+            if (humanChoice == "Rock" && computerChoice == "Paper") {
+                console.log("You lose! Paper beats rock.");
+                computerScore++;
+                console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
+            } else if (humanChoice == "Paper" && computerChoice == "Scissors") {
+                console.log("You lose! Scissors beats paper.");
+                computerScore++;
+                console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
+            } else if (humanChoice == "Scissors" && computerChoice == "Rock") {
+                console.log("You lose! Rock beats scissors."); 
+                computerScore++;
+                console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
+            } else if (humanChoice == "Paper" && computerChoice == "Rock") {
+                console.log("You win! Paper beats rock.");
+                humanScore++;
+                console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
+            } else if (humanChoice == "Rock" && computerChoice == "Scissors") {
+                console.log("You win! Rock beats scissors.");
+                humanScore++;
+                console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
+            } else if (humanChoice == "Scissors" && computerChoice == "Paper") {
+                console.log("You win! Scissors beats paper.");
+            humanScore++;
+            console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
+            } else if (!(humanChoice == "Rock" 
+            || humanChoice == "Paper" 
+            || humanChoice == "Scissors")) {
+                console.log("Invalid input. Nothing happens.");
+            } else {
+                console.log("It's a draw!");
+                console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
+            } 
+            // LOG the a victory and defeat string to console.log
+            // Make a console.log output for invalid input
+            // INCREMENT computerScore or humanScore depending on which one won
+        
+    } 
+
+    playRound();
+    // MOVE playRound function inside of playGame
+    // CALL playRound function five times to play five rounds
+    
 }
-// MOVE playRound function inside of playGame
-// CALL playRound function five times to play five rounds
+
+playGame();
