@@ -106,6 +106,10 @@ function playGame () {
     } 
 
     playRound();
+    playRound();
+    playRound();
+    playRound();
+    playRound();
     // MOVE playRound function inside of playGame
     // CALL playRound function five times to play five rounds
     
