@@ -1,9 +1,3 @@
-let computerScore = 0;
-// INIT computerScore global variable with a default value of 0
-
-let humanScore = 0;
-// INIT humanScore global variable with a default value of 0
-
 // INIT a function called getComputerChoice
 function getComputerChoice(computerChoice) {
     // INIT a variable called computerChoice
@@ -42,10 +36,14 @@ function getHumanChoice(humanChoice) {
 }
 
 
-
-
 // INIT function called playGame
 function playGame () {
+
+    let computerScore = 0;
+    // INIT computerScore global variable with a default value of 0
+
+    let humanScore = 0;
+    // INIT humanScore global variable with a default value of 0
     
     // INIT function called playRound
     // DECLARE parameters named computerChoice and humanChoice
