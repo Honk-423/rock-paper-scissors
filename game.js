@@ -101,5 +101,8 @@ function playRound(computerChoice, humanChoice) {
 playRound();
 
 // INIT function called playGame
+function playGame () {
+    
+}
 // MOVE playRound function inside of playGame
 // CALL playRound function five times to play five rounds
