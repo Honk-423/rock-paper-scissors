@@ -94,15 +94,12 @@ function playRound(computerChoice, humanChoice) {
     } 
     // LOG the a victory and defeat string to console.log
     // Make a console.log output for invalid input
+    // INCREMENT computerScore or humanScore depending on which one won
     
 } 
 
 playRound();
-// INCREMENT computerScore or humanScore depending on which one won
 
 // INIT function called playGame
 // MOVE playRound function inside of playGame
 // CALL playRound function five times to play five rounds
-
-// Add a semicolon after almost every parentheses to mark the end of a
-// statememt.
