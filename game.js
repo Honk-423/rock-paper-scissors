@@ -1,4 +1,3 @@
-// INIT a function called getComputerChoice
 /* 
 *  Randomly generates a number between 0 and 1 in decimal form.
 *  If the random number is less than 0.01 or higher than 0.99, a loop
@@ -8,17 +7,13 @@
 */
 
 function getComputerChoice(computerChoice) {
-    // INIT a variable called computerChoice
 
     randomNumber = Math.random()
-    // GENERATE a random number with Math.random
 
     while (randomNumber < 0.01 || randomNumber > 0.99) {
             randomNumber = Math.random();
             console.log(randomNumber);
         }
-    // WHILE randomNumber is less than 0.01 and more than 0.99
-    // loop until another number is provided
     // A number below 0.01 isn't desired because counting begins with 
     // one.
     // A number above 0.99 isn't desired because it would make one 
@@ -27,20 +22,15 @@ function getComputerChoice(computerChoice) {
 
     if (randomNumber >= 0.67 && randomNumber < 0.99) {
         computerChoice = "Scissors";
-        // IF 0.67 or more make computerChoice "scissors"
     } else if (randomNumber <= 0.66 && randomNumber > 0.33) {
         computerChoice = "Paper";
-        // IF 0.34 or more make computerChoice "paper"
     } else if (randomNumber <= 0.33 && randomNumber > 0.01) {
         computerChoice = "Rock";
-        // IF 0.01 or more make computerChoice "rock"
     }
 
     return computerChoice;
 }
 
-// INIT function named getHumanChoice
-// DECLARE parameter named humanChoice
 /* 
 *  Prompts the user for a choice between rock, paper, and scissors. 
 *  Assigns the input of that prompt as the user's choice, then returns
@@ -49,13 +39,10 @@ function getComputerChoice(computerChoice) {
 
 function getHumanChoice(humanChoice) {
     humanChoice = prompt("Rock, Paper, Scissors, SHOOT!", "");
-    // INIT humanChoice by prompting for it
 
     return humanChoice;
 }
 
-
-// INIT function called playGame
 /* 
 * Contains the playRound function and score variables because they are 
 * very relevant to this function.
@@ -66,13 +53,9 @@ function getHumanChoice(humanChoice) {
 function playGame () {
 
     let computerScore = 0;
-    // INIT computerScore global variable with a default value of 0
 
     let humanScore = 0;
-    // INIT humanScore global variable with a default value of 0
-    
-    // INIT function called playRound
-    // DECLARE parameters named computerChoice and humanChoice
+
     /* 
     * Makes the user's input case insensitive. 
     * Uses every possible combination of the user and computer's input
@@ -92,7 +75,6 @@ function playGame () {
             humanChoice = humanChoice.charAt(0).toUpperCase() + 
             humanChoice.slice(1);
         }
-        // MAKE parameter humanChoice case insensitve
         // Checks if the user input anything earlier, because if they 
         // didn't there is no need for the code to run. If they did 
         // input something, their input is converted to all lowercase
@@ -141,10 +123,7 @@ function playGame () {
                 console.log("It's a draw!");
                 console.log(`Human: ${humanScore} | Computer: ${computerScore} `)
             } 
-            // LOG the a victory and defeat string to console.log
-            // Make a console.log output for invalid input
-            // INCREMENT computerScore or humanScore depending on which one won
-        
+
     } 
 
     playRound();
@@ -152,11 +131,7 @@ function playGame () {
     playRound();
     playRound();
     playRound();
-    // MOVE playRound function inside of playGame
-    // CALL playRound function five times to play five rounds
-    
+
 }
 
 playGame();
-
-// Make good comments and slowly remove pseudocode
