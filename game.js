@@ -121,3 +121,21 @@ function playRound(computerChoice, humanChoice) {
     } 
 
     playRound();
+
+// INIT btnRock
+// INIT btnPaper
+// INIT btnScissors
+
+// ADD event listener on click for all buttons
+    // USE forEach to apply the event to all buttons
+    // CALL playRound func every time a button is clicked
+    // MAKE humanChoice equal event's value??
+
+// INIT div
+
+// INIT para
+// SET para's text content to display current score for Human
+// and Computer
+
+// INIT para2
+// SET para2's text content to display a victory, loss, or draw message
