@@ -45,32 +45,24 @@ function getHumanChoice(humanChoice) {
 
 
 /* 
-* Contains the playRound function and score variables because they are 
-* very relevant to this function.
-* Calls playRound five times so the user doesn't have to refresh the 
-* browser every round, and can play a full game of rock, paper, 
-* scissors before having to do so.
+* Makes the user's input case insensitive. 
+* Uses every possible combination of the user and computer's input
+* to log semi-unique victory, loss, and draw messages to the 
+* console, as well as a message for invalid input. 
+* The user and computer's respective score variables are 
+* incremented when they win.
+* If the input from the user is valid, the user and computer's 
+* choices will also be logged.
 */
-function playGame () {
 
+function playRound(computerChoice, humanChoice) {
     let computerScore = 0;
-
+    
     let humanScore = 0;
 
-    /* 
-    * Makes the user's input case insensitive. 
-    * Uses every possible combination of the user and computer's input
-    * to log semi-unique victory, loss, and draw messages to the 
-    * console, as well as a message for invalid input. 
-    * The user and computer's respective score variables are 
-    * incremented when they win.
-    * If the input from the user is valid, the user and computer's 
-    * choices will also be logged.
-    */
-    function playRound(computerChoice, humanChoice) {
-        computerChoice = getComputerChoice();
-
-        humanChoice = getHumanChoice();
+    computerChoice = getComputerChoice();
+    
+    humanChoice = getHumanChoice();
         
         if (humanChoice > "") {
             humanChoice = humanChoice.toLowerCase();
@@ -129,12 +121,3 @@ function playGame () {
     } 
 
     playRound();
-    playRound();
-    playRound();
-    playRound();
-    playRound();
-
-}
-
-
-playGame();
