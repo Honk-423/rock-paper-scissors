@@ -120,13 +120,22 @@ function playRound(computerChoice, humanChoice) {
 
     } 
 
-    playRound();
-
 btnRock = document.querySelector("#rock");
+btnRock.addEventListener("click", () => {
+    playRound();
+});
 // INIT btnRock
+
 btnPaper = document.querySelector("#paper");
+btnPaper.addEventListener("click", () => {
+    playRound();
+});
 // INIT btnPaper
+
 btnScissors = document.querySelector("#scissors");
+btnScissors.addEventListener("click", () => {
+    playRound();
+});
 // INIT btnScissors
 
 // ADD event listener on click for all buttons
