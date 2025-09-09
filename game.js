@@ -125,21 +125,25 @@ btnRock.addEventListener("click", () => {
     playRound();
 });
 // INIT btnRock
+// ADD event listener on click for all buttons
+    // CALL playRound func every time a button is clicked
+    // MAKE humanChoice equal event's value??
 
 btnPaper = document.querySelector("#paper");
 btnPaper.addEventListener("click", () => {
     playRound();
 });
 // INIT btnPaper
+// ADD event listener on click for all buttons
+    // CALL playRound func every time a button is clicked
+    // MAKE humanChoice equal event's value??
 
 btnScissors = document.querySelector("#scissors");
 btnScissors.addEventListener("click", () => {
     playRound();
 });
 // INIT btnScissors
-
 // ADD event listener on click for all buttons
-    // USE forEach to apply the event to all buttons
     // CALL playRound func every time a button is clicked
     // MAKE humanChoice equal event's value??
 
