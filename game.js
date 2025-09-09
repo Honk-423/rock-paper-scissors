@@ -38,8 +38,6 @@ function getComputerChoice(computerChoice) {
 *  the value so it can be used inside of other functions later.
 */
 function getHumanChoice(humanChoice) {
-    humanChoice = prompt("Rock, Paper, Scissors, SHOOT!", "");
-
     return humanChoice;
 }
 
