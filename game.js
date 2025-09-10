@@ -75,20 +75,6 @@ function playRound(computerChoice, humanChoice) {
     
     humanChoice = getHumanChoice();
         
-        if (humanChoice > "") {
-            humanChoice = humanChoice.toLowerCase();
-            humanChoice = humanChoice.charAt(0).toUpperCase() + 
-            humanChoice.slice(1);
-        }
-        // Checks if the user input anything earlier, because if they 
-        // didn't there is no need for the code to run. If they did 
-        // input something, their input is converted to all lowercase
-        // then the first letter is capitalized so that they can spell
-        // rock, paper, and scissors with varying capitalization and the
-        // function will still work because the input will always output
-        // the same way.
-        
-        
         if (humanChoice == "Rock" 
             || humanChoice == "Paper" 
             || humanChoice == "Scissors") {
