@@ -99,6 +99,7 @@ function playRound(computerChoice, humanChoice) {
 
     } 
 let playerSelection;
+// INIT variable named playerSelection
 
 const btnRock = document.querySelector("#rock");
 btnRock.addEventListener("click", () => {
@@ -107,8 +108,8 @@ btnRock.addEventListener("click", () => {
 });
 // INIT btnRock
 // ADD event listener on click for all buttons
+    // GIVE playerSelection a unique value to use with humanChoice
     // CALL playRound func every time a button is clicked
-    // MAKE humanChoice equal event's value??
 
 const btnPaper = document.querySelector("#paper");
 btnPaper.addEventListener("click", () => {
@@ -117,8 +118,8 @@ btnPaper.addEventListener("click", () => {
 });
 // INIT btnPaper
 // ADD event listener on click for all buttons
+    // GIVE playerSelection a unique value to use with humanChoice
     // CALL playRound func every time a button is clicked
-    // MAKE humanChoice equal event's value??
 
 const btnScissors = document.querySelector("#scissors");
 btnScissors.addEventListener("click", () => {
@@ -127,8 +128,8 @@ btnScissors.addEventListener("click", () => {
 });
 // INIT btnScissors
 // ADD event listener on click for all buttons
+    // GIVE playerSelection a unique value to use with humanChoice
     // CALL playRound func every time a button is clicked
-    // MAKE humanChoice equal event's value??
 
 // INIT div
 
