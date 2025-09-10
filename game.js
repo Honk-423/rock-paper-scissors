@@ -39,8 +39,8 @@ function getComputerChoice(computerChoice) {
 */
 function getHumanChoice(humanChoice) {
     if (btnRock) {
-    humanChoice = "Rock";
-    return humanChoice;
+        humanChoice = "Rock";
+        return humanChoice;
     };
 
     if (btnPaper) {
