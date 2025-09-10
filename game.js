@@ -57,9 +57,9 @@ function playRound(computerChoice, humanChoice) {
     
     humanChoice = getHumanChoice();
         
-        if (humanChoice == "Rock" 
-            || humanChoice == "Paper" 
-            || humanChoice == "Scissors") {
+        if (humanChoice == "Rock" || 
+            humanChoice == "Paper" || 
+            humanChoice == "Scissors") {
                 console.log(`Computer: ${computerChoice}`);
                 console.log(`Human: ${humanChoice}`);
             }
@@ -86,16 +86,16 @@ function playRound(computerChoice, humanChoice) {
                 console.log(`Human: ${humanScore} | Computer: ${computerScore} `);
             } else if (humanChoice == "Scissors" && computerChoice == "Paper") {
                 console.log("You win! Scissors beats paper.");
-            humanScore++;
-            console.log(`Human: ${humanScore} | Computer: ${computerScore} `);
-            } else if (!(humanChoice == "Rock" 
-            || humanChoice == "Paper" 
-            || humanChoice == "Scissors")) {
+                humanScore++;
+                console.log(`Human: ${humanScore} | Computer: ${computerScore} `);
+            } else if (!(humanChoice == "Rock" || 
+                        humanChoice == "Paper" || 
+                        humanChoice == "Scissors")) {
                 console.log("Invalid input. Nothing happens.");
             } else {
                 console.log("It's a draw!");
                 console.log(`Human: ${humanScore} | Computer: ${computerScore} `);
-            } 
+            }
 
     } 
 let playerSelection;
