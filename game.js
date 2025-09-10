@@ -38,8 +38,21 @@ function getComputerChoice(computerChoice) {
 *  the value so it can be used inside of other functions later.
 */
 function getHumanChoice(humanChoice) {
+    if (btnRock) {
+    humanChoice = "Rock";
     return humanChoice;
-}
+    };
+
+    if (btnPaper) {
+        humanChoice = "Paper";
+        return humanChoice;
+    };
+
+    if (btnScissors) {
+        humanChoice = "Scissors";
+        return humanChoice;
+    };
+};
 
 
 /* 
