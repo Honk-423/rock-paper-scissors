@@ -31,12 +31,6 @@ function getComputerChoice(computerChoice) {
     return computerChoice;
 }
 
-
-/* 
-*  Prompts the user for a choice between rock, paper, and scissors. 
-*  Assigns the input of that prompt as the user's choice, then returns
-*  the value so it can be used inside of other functions later.
-*/
 function getHumanChoice(humanChoice) {
     if (playerSelection === 0) {
         humanChoice = "Rock";
@@ -53,18 +47,6 @@ function getHumanChoice(humanChoice) {
         return humanChoice;
     };
 };
-
-
-/* 
-* Makes the user's input case insensitive. 
-* Uses every possible combination of the user and computer's input
-* to log semi-unique victory, loss, and draw messages to the 
-* console, as well as a message for invalid input. 
-* The user and computer's respective score variables are 
-* incremented when they win.
-* If the input from the user is valid, the user and computer's 
-* choices will also be logged.
-*/
 
 function playRound(computerChoice, humanChoice) {
     let computerScore = 0;
