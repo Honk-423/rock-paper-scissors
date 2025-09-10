@@ -95,9 +95,10 @@ function playRound(computerChoice, humanChoice) {
             } else {
                 console.log("It's a draw!");
                 console.log(`Human: ${humanScore} | Computer: ${computerScore} `);
-            }
+            };
 
-    } 
+    };
+    
 let playerSelection;
 // INIT variable named playerSelection
 
