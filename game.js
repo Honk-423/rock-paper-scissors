@@ -38,17 +38,17 @@ function getComputerChoice(computerChoice) {
 *  the value so it can be used inside of other functions later.
 */
 function getHumanChoice(humanChoice) {
-    if (btnRock) {
+    if (playerSelection === 0) {
         humanChoice = "Rock";
         return humanChoice;
     };
 
-    if (btnPaper) {
+    if (playerSelection === 1) {
         humanChoice = "Paper";
         return humanChoice;
     };
 
-    if (btnScissors) {
+    if (playerSelection === 2) {
         humanChoice = "Scissors";
         return humanChoice;
     };
@@ -116,9 +116,11 @@ function playRound(computerChoice, humanChoice) {
             } 
 
     } 
+let playerSelection;
 
 const btnRock = document.querySelector("#rock");
 btnRock.addEventListener("click", () => {
+    playerSelection = 0;
     playRound();
 });
 // INIT btnRock
@@ -128,6 +130,7 @@ btnRock.addEventListener("click", () => {
 
 const btnPaper = document.querySelector("#paper");
 btnPaper.addEventListener("click", () => {
+    playerSelection = 1;
     playRound();
 });
 // INIT btnPaper
@@ -137,6 +140,7 @@ btnPaper.addEventListener("click", () => {
 
 const btnScissors = document.querySelector("#scissors");
 btnScissors.addEventListener("click", () => {
+    playerSelection = 2;
     playRound();
 });
 // INIT btnScissors
