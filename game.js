@@ -131,7 +131,7 @@ function playRound(computerChoice, humanChoice) {
 
     } 
 
-btnRock = document.querySelector("#rock");
+const btnRock = document.querySelector("#rock");
 btnRock.addEventListener("click", () => {
     playRound();
 });
@@ -140,7 +140,7 @@ btnRock.addEventListener("click", () => {
     // CALL playRound func every time a button is clicked
     // MAKE humanChoice equal event's value??
 
-btnPaper = document.querySelector("#paper");
+const btnPaper = document.querySelector("#paper");
 btnPaper.addEventListener("click", () => {
     playRound();
 });
@@ -149,7 +149,7 @@ btnPaper.addEventListener("click", () => {
     // CALL playRound func every time a button is clicked
     // MAKE humanChoice equal event's value??
 
-btnScissors = document.querySelector("#scissors");
+const btnScissors = document.querySelector("#scissors");
 btnScissors.addEventListener("click", () => {
     playRound();
 });
