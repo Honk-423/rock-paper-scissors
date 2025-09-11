@@ -69,13 +69,28 @@ function playRound(computerChoice, humanChoice) {
                 let score = document.createElement("p");
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
+                // INIT score
+                // MAKE score's text content keep track of humanScore
+                // and computerScore
+                // APPEND score to output
 
                 let outcomeMsg = document.createElement("p");
                 outcomeMsg.textContent = "You lose! Paper beats rock.";
                 output.appendChild(outcomeMsg);
+                // INIT outcomeMsg and create a paragraph element with 
+                // it
+                // MAKE outcomeMsg display a relevant and accurate 
+                // outcome message
+                // APPEND outcomeMsg to output
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
+                // INIT lineBreak and create a linebreak element with
+                // it
+                // APPEND lineBreak to output
+
+                // REPEAT these steps for all if statements related to
+                // displaying the score and outcome
             } else if (humanChoice == "Paper" && computerChoice == "Scissors") {
                 computerScore++;
                 score = document.createElement("p");
