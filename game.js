@@ -195,10 +195,3 @@ btnScissors.addEventListener("click", () => {
 
 const output = document.querySelector("#output");
 // INIT div
-
-// INIT para
-// SET para's text content to display current score for Human
-// and Computer
-
-// INIT para2
-// SET para2's text content to display a victory, loss, or draw message
