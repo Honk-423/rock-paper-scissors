@@ -128,7 +128,7 @@ function playRound(computerChoice, humanChoice) {
                 humanScore++;
                 score = document.createElement("p");
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
-                output.appendChildnd(score);
+                output.appendChild(score);
 
                 outcomeMsg = document.createElement("p");
                 outcomeMsg.textContent = "You win! Scissors beats paper.";
