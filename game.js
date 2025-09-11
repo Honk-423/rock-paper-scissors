@@ -48,10 +48,11 @@ function getHumanChoice(humanChoice) {
     };
 };
 
+let computerScore = 0;
+
+let humanScore = 0;
+
 function playRound(computerChoice, humanChoice) {
-    let computerScore = 0;
-    
-    let humanScore = 0;
 
     computerChoice = getComputerChoice();
     
