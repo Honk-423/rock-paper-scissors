@@ -174,6 +174,11 @@ function playRound(computerChoice, humanChoice) {
                 output.appendChild(lineBreak);
             };
 
+            if (humanScore === 5 || computerScore === 5) {
+                humanScore = 0;
+                computerScore = 0;
+            };
+
     };
     
 let playerSelection;
