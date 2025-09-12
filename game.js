@@ -67,12 +67,12 @@ function playRound(computerChoice, humanChoice) {
 
             if (humanChoice == "Rock" && computerChoice == "Paper") {
                 let choice = document.createElement("p");
-                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
 
                 computerScore++;
                 let score = document.createElement("p");
-                score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
+                score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
                 // INIT score
                 // MAKE score's text content keep track of humanScore
@@ -95,60 +95,60 @@ function playRound(computerChoice, humanChoice) {
                 // displaying the score and outcome
             } else if (humanChoice == "Paper" && computerChoice == "Scissors") {
                 let choice = document.createElement("p");
-                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
 
                 computerScore++;
                 score = document.createElement("p");
-                score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
+                score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else if (humanChoice == "Scissors" && computerChoice == "Rock") {
                 let choice = document.createElement("p");
-                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
 
                 computerScore++;
                 score = document.createElement("p");
-                score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
+                score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else if (humanChoice == "Paper" && computerChoice == "Rock") {
                 let choice = document.createElement("p");
-                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
 
                 humanScore++;
                 score = document.createElement("p");
-                score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
+                score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else if (humanChoice == "Rock" && computerChoice == "Scissors") {
                 let choice = document.createElement("p");
-                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
 
                 humanScore++;
                 score = document.createElement("p");
-                score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
+                score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak); 
             } else if (humanChoice == "Scissors" && computerChoice == "Paper") {
                 let choice = document.createElement("p");
-                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
 
                 humanScore++;
                 score = document.createElement("p");
-                score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
+                score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
                 const lineBreak = document.createElement("br");
@@ -161,11 +161,11 @@ function playRound(computerChoice, humanChoice) {
                 output.appendChild(lineBreak);
             } else {
                 let choice = document.createElement("p");
-                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
-                
+
                 score = document.createElement("p");
-                score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
+                score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
                 const lineBreak = document.createElement("br");
@@ -174,14 +174,14 @@ function playRound(computerChoice, humanChoice) {
 
             if (humanScore === 5) {
                 const gameOutcome = document.createElement("h3");
-                gameOutcome.textContent = "You win the game!";
+                gameOutcome.textContent = "Player win the game!";
                 output.appendChild(gameOutcome);
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else if (computerScore === 5) {
                 const gameOutcome = document.createElement("h3");
-                gameOutcome.textContent = "You lose the game!";
+                gameOutcome.textContent = "Player lose the game!";
                 output.appendChild(gameOutcome);
 
                 const lineBreak = document.createElement("br");
