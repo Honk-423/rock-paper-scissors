@@ -237,3 +237,15 @@ btnScissors.addEventListener("click", () => {
 
 const output = document.querySelector("#output");
 // INIT div
+
+// IMPROVE computerChoice generation because every 500 or so uses, it 
+// returns as undefined.
+
+// TRY combining all player victory if statements
+
+// TRY combining all player lose if statements
+
+// REWRITE pseudocode to make it explain what everything does instead
+// basically being a guide on what to do next
+
+// CLEAN up old pseudocode
