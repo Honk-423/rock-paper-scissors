@@ -66,6 +66,10 @@ function playRound(computerChoice, humanChoice) {
             }
 
             if (humanChoice == "Rock" && computerChoice == "Paper") {
+                let choice = document.createElement("p");
+                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                output.appendChild(choice);
+
                 computerScore++;
                 let score = document.createElement("p");
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
@@ -90,6 +94,10 @@ function playRound(computerChoice, humanChoice) {
                 // REPEAT these steps for all if statements related to
                 // displaying the score and outcome
             } else if (humanChoice == "Paper" && computerChoice == "Scissors") {
+                let choice = document.createElement("p");
+                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                output.appendChild(choice);
+
                 computerScore++;
                 score = document.createElement("p");
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
@@ -98,6 +106,10 @@ function playRound(computerChoice, humanChoice) {
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else if (humanChoice == "Scissors" && computerChoice == "Rock") {
+                let choice = document.createElement("p");
+                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                output.appendChild(choice);
+
                 computerScore++;
                 score = document.createElement("p");
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
@@ -106,6 +118,10 @@ function playRound(computerChoice, humanChoice) {
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else if (humanChoice == "Paper" && computerChoice == "Rock") {
+                let choice = document.createElement("p");
+                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                output.appendChild(choice);
+
                 humanScore++;
                 score = document.createElement("p");
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
@@ -114,6 +130,10 @@ function playRound(computerChoice, humanChoice) {
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else if (humanChoice == "Rock" && computerChoice == "Scissors") {
+                let choice = document.createElement("p");
+                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                output.appendChild(choice);
+
                 humanScore++;
                 score = document.createElement("p");
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
@@ -122,6 +142,10 @@ function playRound(computerChoice, humanChoice) {
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak); 
             } else if (humanChoice == "Scissors" && computerChoice == "Paper") {
+                let choice = document.createElement("p");
+                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                output.appendChild(choice);
+
                 humanScore++;
                 score = document.createElement("p");
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
@@ -136,6 +160,10 @@ function playRound(computerChoice, humanChoice) {
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else {
+                let choice = document.createElement("p");
+                choice.textContent = `You: ${humanChoice} | Computer: ${computerChoice}`
+                output.appendChild(choice);
+                
                 score = document.createElement("p");
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
