@@ -174,10 +174,27 @@ function playRound(computerChoice, humanChoice) {
                 output.appendChild(lineBreak);
             };
 
+            if (humanScore === 5) {
+                const gameOutcome = document.createElement("h3");
+                gameOutcome.textContent = "You win the game!";
+                output.appendChild(gameOutcome);
+
+                const lineBreak = document.createElement("br");
+                output.appendChild(lineBreak);
+            } else if (computerScore === 5) {
+                const gameOutcome = document.createElement("h3");
+                gameOutcome.textContent = "You lose the game!";
+                output.appendChild(gameOutcome);
+
+                const lineBreak = document.createElement("br");
+                output.appendChild(lineBreak);
+            }
+
             if (humanScore === 5 || computerScore === 5) {
                 humanScore = 0;
                 computerScore = 0;
             };
+
 
     };
     
