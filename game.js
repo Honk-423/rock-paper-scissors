@@ -138,14 +138,14 @@ function playRound(computerChoice, humanChoice) {
 
             if (humanScore === 5) {
                 const gameOutcome = document.createElement("h3");
-                gameOutcome.textContent = "Player win the game!";
+                gameOutcome.textContent = "Player wins the game!";
                 output.appendChild(gameOutcome);
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else if (computerScore === 5) {
                 const gameOutcome = document.createElement("h3");
-                gameOutcome.textContent = "Player lose the game!";
+                gameOutcome.textContent = "Player loses the game!";
                 output.appendChild(gameOutcome);
 
                 const lineBreak = document.createElement("br");
