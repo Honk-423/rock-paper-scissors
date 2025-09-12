@@ -145,7 +145,7 @@ function playRound(computerChoice, humanChoice) {
                 output.appendChild(lineBreak);
             } else if (computerScore === 5) {
                 const gameOutcome = document.createElement("h3");
-                gameOutcome.textContent = "Player loses the game!";
+                gameOutcome.textContent = "Player loses the game...";
                 output.appendChild(gameOutcome);
 
                 const lineBreak = document.createElement("br");
