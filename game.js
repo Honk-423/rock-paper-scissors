@@ -153,13 +153,7 @@ function playRound(computerChoice, humanChoice) {
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
-            } else if (!(humanChoice == "Rock" || 
-                        humanChoice == "Paper" || 
-                        humanChoice == "Scissors")) {
-
-                const lineBreak = document.createElement("br");
-                output.appendChild(lineBreak);
-            } else {
+            } else if (humanChoice === computerChoice) {
                 let choice = document.createElement("p");
                 choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
@@ -168,6 +162,18 @@ function playRound(computerChoice, humanChoice) {
                 score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
+                const lineBreak = document.createElement("br");
+                output.appendChild(lineBreak);
+
+            } else {
+                score = document.createElement("p");
+                score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
+                output.appendChild(score);
+
+                let choice = document.createElement("p");
+                choice.textContent = `Invalid input`;
+                output.appendChild(choice);
+                
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             };
