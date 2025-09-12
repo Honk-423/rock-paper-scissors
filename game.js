@@ -75,14 +75,11 @@ function playRound(computerChoice, humanChoice) {
                 // and computerScore
                 // APPEND score to output
 
-                let outcomeMsg = document.createElement("p");
-                outcomeMsg.textContent = "You lose! Paper beats rock.";
-                output.appendChild(outcomeMsg);
-                // INIT outcomeMsg and create a paragraph element with 
+                // INIT  and create a paragraph element with 
                 // it
-                // MAKE outcomeMsg display a relevant and accurate 
+                // MAKE  display a relevant and accurate 
                 // outcome message
-                // APPEND outcomeMsg to output
+                // APPEND  to output
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
@@ -98,10 +95,6 @@ function playRound(computerChoice, humanChoice) {
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
-                outcomeMsg = document.createElement("p");
-                outcomeMsg.textContent = "You lose! Scissors beats paper.";
-                output.appendChild(outcomeMsg);
-
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else if (humanChoice == "Scissors" && computerChoice == "Rock") {
@@ -109,10 +102,6 @@ function playRound(computerChoice, humanChoice) {
                 score = document.createElement("p");
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
-
-                outcomeMsg = document.createElement("p");
-                outcomeMsg.textContent = "You lose! Rock beats scissors.";
-                output.appendChild(outcomeMsg);
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
@@ -122,10 +111,6 @@ function playRound(computerChoice, humanChoice) {
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
-                outcomeMsg = document.createElement("p");
-                outcomeMsg.textContent = "You win! Paper beats rock.";
-                output.appendChild(outcomeMsg); 
-
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else if (humanChoice == "Rock" && computerChoice == "Scissors") {
@@ -133,10 +118,6 @@ function playRound(computerChoice, humanChoice) {
                 score = document.createElement("p");
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
-
-                outcomeMsg = document.createElement("p");
-                outcomeMsg.textContent = "You win! Rock beats scissors.";
-                output.appendChild(outcomeMsg);
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak); 
@@ -146,18 +127,11 @@ function playRound(computerChoice, humanChoice) {
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
-                outcomeMsg = document.createElement("p");
-                outcomeMsg.textContent = "You win! Scissors beats paper.";
-                output.appendChild(outcomeMsg);
-
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else if (!(humanChoice == "Rock" || 
                         humanChoice == "Paper" || 
                         humanChoice == "Scissors")) {
-                outcomeMsg = document.createElement("p");
-                outcomeMsg.textContent = "Invalid input. Nothing happens.";
-                output.appendChild(outcomeMsg);
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
@@ -165,10 +139,6 @@ function playRound(computerChoice, humanChoice) {
                 score = document.createElement("p");
                 score.textContent = `Human: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
-
-                outcomeMsg = document.createElement("p");
-                outcomeMsg.textContent = "It's a draw!";
-                output.appendChild(outcomeMsg);
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
