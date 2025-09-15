@@ -3,7 +3,7 @@ function getRandomInt(min, max) {
     max = Math.floor(max);
 
     return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+};
 
 function getComputerChoice(computerChoice) {
 
@@ -18,7 +18,7 @@ function getComputerChoice(computerChoice) {
     };
 
     return computerChoice;
-}
+};
 
 function getHumanChoice(humanChoice) {
     if (playerSelection === 0) {
@@ -51,7 +51,6 @@ function playRound(computerChoice, humanChoice) {
                 humanChoice == "Paper" && computerChoice == "Scissors" ||
                 humanChoice == "Scissors" && computerChoice == "Rock"
             ) {
-                
                 let choice = document.createElement("p");
                 choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
@@ -89,7 +88,6 @@ function playRound(computerChoice, humanChoice) {
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
-
             } else {
                 score = document.createElement("p");
                 score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
