@@ -202,10 +202,6 @@ const output = document.querySelector("#output");
 // IMPROVE computerChoice generation because every 500 or so uses, it 
 // returns as undefined.
 
-
-
-
-
 // REWRITE pseudocode to make it explain what everything does instead
 // basically being a guide on what to do next
 
