@@ -46,13 +46,6 @@ function playRound(computerChoice, humanChoice) {
     computerChoice = getComputerChoice();
     
     humanChoice = getHumanChoice();
-        
-        if (humanChoice == "Rock" || 
-            humanChoice == "Paper" || 
-            humanChoice == "Scissors") {
-                console.log(`Computer: ${computerChoice}`);
-                console.log(`Human: ${humanChoice}`);
-            }
 
             if (humanChoice == "Rock" && computerChoice == "Paper" ||
                 humanChoice == "Paper" && computerChoice == "Scissors" ||
