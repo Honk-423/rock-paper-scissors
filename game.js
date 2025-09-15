@@ -5,8 +5,6 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-console.log( getRandomInt(0, 2) );
-
 /* 
 *  Randomly generates a number between 0 and 1 in decimal form.
 *  If the random number is less than 0.01 or higher than 0.99, a loop
@@ -18,11 +16,7 @@ console.log( getRandomInt(0, 2) );
 function getComputerChoice(computerChoice) {
 
     randomNumber = Math.random();
-
-    while (randomNumber < 0.01 || randomNumber > 0.99) {
-            randomNumber = Math.random();
-            console.log(randomNumber);
-        }
+    
     // A number below 0.01 isn't desired because counting begins with 
     // one.
     // A number above 0.99 isn't desired because it would make one 
