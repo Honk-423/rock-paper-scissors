@@ -15,21 +15,21 @@ function getRandomInt(min, max) {
 
 function getComputerChoice(computerChoice) {
 
-    randomNumber = Math.random();
-    
+    randomNumber = getRandomInt(0, 2);
+
     // A number below 0.01 isn't desired because counting begins with 
     // one.
     // A number above 0.99 isn't desired because it would make one 
     // choice more likely to be picked than the others, since 1 doesn't
     // split evenly into 3 parts.
 
-    if (randomNumber >= 0.67 && randomNumber < 0.99) {
-        computerChoice = "Scissors";
-    } else if (randomNumber <= 0.66 && randomNumber > 0.33) {
-        computerChoice = "Paper";
-    } else if (randomNumber <= 0.33 && randomNumber > 0.01) {
+    if (randomNumber === 0) {
         computerChoice = "Rock";
-    }
+    } else if (randomNumber === 1) {
+        computerChoice = "Paper";
+    } else {
+        computerChoice = "Scissors";
+    };
 
     return computerChoice;
 }
