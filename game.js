@@ -69,6 +69,8 @@ function playRound(computerChoice, humanChoice) {
                 humanChoice == "Paper" && computerChoice == "Scissors" ||
                 humanChoice == "Scissors" && computerChoice == "Rock"
             ) {
+                // COMBINE all player loss if statements
+                
                 let choice = document.createElement("p");
                 choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
@@ -100,6 +102,7 @@ function playRound(computerChoice, humanChoice) {
                        humanChoice == "Paper" && computerChoice == "Rock" ||
                        humanChoice == "Scissors" && computerChoice == "Paper"
             ) {
+                // COMBINE all player victory if statements
                 let choice = document.createElement("p");
                 choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
@@ -199,9 +202,9 @@ const output = document.querySelector("#output");
 // IMPROVE computerChoice generation because every 500 or so uses, it 
 // returns as undefined.
 
-// TRY combining all player victory if statements
 
-// TRY combining all player lose if statements
+
+
 
 // REWRITE pseudocode to make it explain what everything does instead
 // basically being a guide on what to do next
