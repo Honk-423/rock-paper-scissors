@@ -1,3 +1,12 @@
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+console.log( getRandomInt(0, 2) );
+
 /* 
 *  Randomly generates a number between 0 and 1 in decimal form.
 *  If the random number is less than 0.01 or higher than 0.99, a loop
