@@ -71,7 +71,7 @@ function playRound(computerChoice, humanChoice) {
                 output.appendChild(choice);
 
                 humanScore++;
-                score = document.createElement("p");
+                let score = document.createElement("p");
                 score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
@@ -82,14 +82,14 @@ function playRound(computerChoice, humanChoice) {
                 choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
 
-                score = document.createElement("p");
+                let score = document.createElement("p");
                 score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             } else {
-                score = document.createElement("p");
+                let score = document.createElement("p");
                 score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
 
