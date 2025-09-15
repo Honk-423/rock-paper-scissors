@@ -5,23 +5,9 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-/* 
-*  Randomly generates a number between 0 and 1 in decimal form.
-*  If the random number is less than 0.01 or higher than 0.99, a loop
-*  runs until a number in between that range is provided. 
-*  The number is then used to randomly pick whether the computer plays 
-*  rock, paper, or scissors. 
-*/
-
 function getComputerChoice(computerChoice) {
 
     randomNumber = getRandomInt(0, 2);
-
-    // A number below 0.01 isn't desired because counting begins with 
-    // one.
-    // A number above 0.99 isn't desired because it would make one 
-    // choice more likely to be picked than the others, since 1 doesn't
-    // split evenly into 3 parts.
 
     if (randomNumber === 0) {
         computerChoice = "Rock";
@@ -72,7 +58,6 @@ function playRound(computerChoice, humanChoice) {
                 humanChoice == "Paper" && computerChoice == "Scissors" ||
                 humanChoice == "Scissors" && computerChoice == "Rock"
             ) {
-                // COMBINE all player loss if statements
                 
                 let choice = document.createElement("p");
                 choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
@@ -82,30 +67,13 @@ function playRound(computerChoice, humanChoice) {
                 let score = document.createElement("p");
                 score.textContent = `Player: ${humanScore} | Computer: ${computerScore}`;
                 output.appendChild(score);
-                // INIT score
-                // MAKE score's text content keep track of humanScore
-                // and computerScore
-                // APPEND score to output
-
-                // INIT  and create a paragraph element with 
-                // it
-                // MAKE  display a relevant and accurate 
-                // outcome message
-                // APPEND  to output
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
-                // INIT lineBreak and create a linebreak element with
-                // it
-                // APPEND lineBreak to output
-
-                // REPEAT these steps for all if statements related to
-                // displaying the score and outcome
             } else if (humanChoice == "Rock" && computerChoice == "Scissors" ||
                        humanChoice == "Paper" && computerChoice == "Rock" ||
                        humanChoice == "Scissors" && computerChoice == "Paper"
             ) {
-                // COMBINE all player victory if statements
                 let choice = document.createElement("p");
                 choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
                 output.appendChild(choice);
@@ -167,45 +135,23 @@ function playRound(computerChoice, humanChoice) {
     };
     
 let playerSelection;
-// INIT variable named playerSelection
 
 const btnRock = document.querySelector("#rock");
 btnRock.addEventListener("click", () => {
     playerSelection = 0;
     playRound();
 });
-// INIT btnRock
-// ADD event listener on click for all buttons
-    // GIVE playerSelection a unique value to use with humanChoice
-    // CALL playRound func every time a button is clicked
 
 const btnPaper = document.querySelector("#paper");
 btnPaper.addEventListener("click", () => {
     playerSelection = 1;
     playRound();
 });
-// INIT btnPaper
-// ADD event listener on click for all buttons
-    // GIVE playerSelection a unique value to use with humanChoice
-    // CALL playRound func every time a button is clicked
 
 const btnScissors = document.querySelector("#scissors");
 btnScissors.addEventListener("click", () => {
     playerSelection = 2;
     playRound();
 });
-// INIT btnScissors
-// ADD event listener on click for all buttons
-    // GIVE playerSelection a unique value to use with humanChoice
-    // CALL playRound func every time a button is clicked
 
 const output = document.querySelector("#output");
-// INIT div
-
-// IMPROVE computerChoice generation because every 500 or so uses, it 
-// returns as undefined.
-
-// REWRITE pseudocode to make it explain what everything does instead
-// basically being a guide on what to do next
-
-// CLEAN up old pseudocode
