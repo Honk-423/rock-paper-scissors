@@ -125,7 +125,9 @@ function playRound(computerChoice, humanChoice) {
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
             }
-
+                
+            // Resets humanScore and computerScore when either reaches 
+            // five so that a new round can begin.
             if (humanScore === 5 || computerScore === 5) {
                 humanScore = 0;
                 computerScore = 0;
