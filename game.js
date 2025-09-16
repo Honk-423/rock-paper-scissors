@@ -47,9 +47,9 @@ function playRound(computerChoice, humanChoice) {
     
     humanChoice = getHumanChoice();
 
-            if (humanChoice == "Rock" && computerChoice == "Paper" ||
-                humanChoice == "Paper" && computerChoice == "Scissors" ||
-                humanChoice == "Scissors" && computerChoice == "Rock"
+            if (humanChoice === "Rock" && computerChoice === "Paper" ||
+                humanChoice === "Paper" && computerChoice === "Scissors" ||
+                humanChoice === "Scissors" && computerChoice === "Rock"
             ) {
                 let choice = document.createElement("p");
                 choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
@@ -62,9 +62,9 @@ function playRound(computerChoice, humanChoice) {
 
                 const lineBreak = document.createElement("br");
                 output.appendChild(lineBreak);
-            } else if (humanChoice == "Rock" && computerChoice == "Scissors" ||
-                       humanChoice == "Paper" && computerChoice == "Rock" ||
-                       humanChoice == "Scissors" && computerChoice == "Paper"
+            } else if (humanChoice === "Rock" && computerChoice === "Scissors" ||
+                       humanChoice === "Paper" && computerChoice === "Rock" ||
+                       humanChoice === "Scissors" && computerChoice === "Paper"
             ) {
                 let choice = document.createElement("p");
                 choice.textContent = `Player: ${humanChoice} | Computer: ${computerChoice}`
